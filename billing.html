@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="billingstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>FoodIcons</h1>
+        <h3 class="menu-btn">Menu</h3>
+        <h2> <a href="index.html">Home</a></h2>
+    </header>
+    <section>
+        <form class="billing">
+            <div class="input-box">
+                <label for="item-name" class="c-white">Item Name</label>
+                <input id="item-name" list="menu" required class="p1" placeholder="Enter item using suggestions">
+                <datalist id="menu">
+                    <option value="hot coffee">
+                    <option value="special coffee">
+                    <option value="mango shake">
+                    <option value="cold cream coffee">
+                    <option value="chocolate milk">
+                    <option value="roohafza sharbat">
+                    <option value="roohafza milk shake">
+                    <option value="espresso coffee">
+                    <option value="lemon squash">
+                    <option value="badam shake">
+                    <option value="chocolate shake">
+                    <option value="stawberry shake">
+                    <option value="kesar shake">
+                    <option value="banana shake">
+                    <option value="bisleri">
+                </datalist>
+            </div>
+            <div class="input-box">
+                <label for="item-qty"  class="c-white">QTY.</label>
+                <input type="number" id="item-qty" class="p1" value="1" min="1">
+            </div>
+            <!-- <div class="input-box">
+                <label for="price"  class="c-white">Price</label>
+                <div class="price-box p1">Rs.10</div>
+            </div> -->
+            <div class="btn-div input-box">
+                <input type="button" value="Submit" class="btn submit-btn">
+            </div>
+        </form>
+        <div class="bill ">
+            <table>
+                <thead>
+                    <tr>
+                        <th>DESCRIPTION</th>
+                        <th>PRICE</th>
+                        <th>QTY</th>
+                        <th>TOTAL</th>
+                        <th class="action-row">ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Coffee</td>
+                        <td>RS.10</td>
+                        <td>2</td>
+                        <td>RS.20</td>
+                        <td  class="action-row"><button class="action-btn">X</button></td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td>Coffee</td>
+                        <td>RS.10</td>
+                        <td>2</td>
+                        <td>RS.20</td>
+                        <td  class="action-row"><button class="action-btn">X</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="details">
+                <div class="info-div">
+                    <p><span>Phone  :</span> 9987325809</p>
+                    <p><span>Location :</span> Shivaji Park, Dadar</p>
+                    <p><span>Gmail :</span> indiano@gmail.com</p>
+                </div>
+                <div class="amount">
+                    <div class="cost">
+                        <ul>
+                            <li>SUBTOTAL</li>
+                            <li>TAX</li>
+                        </ul>
+                        <ul>
+                            <li class="bold subtotal">RS.0</li>
+                            <li class="bold tax">5%</li>
+                        </ul>
+                    </div>
+                    <div class="total">
+                        <p class="bold">TOTAL</p>
+                        <p class="bold total-price">RS.0</p>
+                    </div>
+                    
+                    <div class="button btn-div">
+                        <button class="btn print-btn">Bill</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Print -->
+        <h2 class="greeting">THANK YOU, VISIT SOON.</h2>
+        
+    </section>
+
+    
+    
+
+
+    <!-- MENU -->
+    
+    <div class="menu">
+        <button class="close-btn">x</button>
+        <div class="wrapper">
+            
+            <ul>
+                <li>hot coffee</li>
+                <li>special coffee</li>
+                <li>mango shake</li>
+                <li>cold cream coffee</li>
+                <li>chocolate milk</li>
+                <li>roohafza sharbat</li>
+                <li>roohafza milk shake</li>
+                <li>espresso coffee</li>
+                <li>lemon squash</li>
+                <li>badam shake</li>
+                <li>chocolate shake</li>
+                <li>stawberry shake</li>
+                <li>kesar shake</li>
+                <li>banana shake</li>
+                <li>bisleri</li>
+            </ul>
+            <ul class="right">
+                <li>RS.53</li>
+                <li>RS.66</li>
+                <li>RS.85</li>
+                <li>RS.92</li>
+                <li>RS.116</li>
+                <li>RS.80</li>
+                <li>RS.81</li>
+                <li>RS.104</li>
+                <li>RS.69</li>
+                <li>RS.50</li>
+                <li>RS.55</li>
+                <li>RS.75</li>
+                <li>RS.66</li>
+                <li>RS.45</li>
+                <li>RS.20</li>
+            </ul>
+        </div>
+        
+    </div>
+    <script src="billingscript.js"></script>
+</body>
+
+</html>

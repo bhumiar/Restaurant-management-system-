@@ -1,0 +1,343 @@
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgb(35, 39, 52);
+
+}
+
+header {
+    /* background-color: antiquewhite; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header a {
+    position: absolute;
+    top: 39px;
+    right: 120px;
+    color: orange;
+    cursor: pointer;
+}
+header a:hover{
+    text-decoration: overline;
+}
+
+
+header h3 {
+    position: absolute;
+    text-decoration: underline;
+    font-size: 25px;
+    top: 39px;
+    right: 40px;
+    color: orange;
+    cursor: pointer;
+}
+
+header h3:hover{
+    text-decoration:overline;
+}
+
+h1 {
+    background-color: orange;
+    padding: 13px;
+    border-radius: 36px;
+    color: black;
+}
+
+section {
+    display: flex;
+    /* border: 2px solid black;*/
+    /* background-color: blue; */
+    height: 80vh;
+    margin-top: 20px;
+}
+
+.bill,
+.billing {
+    width: 50%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+
+/* Billing */
+
+.billing {
+    /* background-color: antiquewhite; */
+    padding-left: 29px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.billing #item-name {
+    width: 50%;
+}
+
+.billing * {
+    font-size: 20px;
+}
+
+.billing label {
+    display: block;
+    color: white;
+    /* font-size: 20px; */
+}
+
+.billing .p1 {
+    padding: 10px;
+}
+
+.billing .input-box {
+    margin-bottom: 16px;
+}
+
+.billing input {
+    border: none;
+    border-radius: 5px;
+}
+
+.billing #item-qty {
+    width: 18%;
+}
+
+.billing .price-box {
+    background-color: white;
+    /* width: 10%; */
+    display: inline-block;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.btn-div {
+    margin-top: 33px;
+}
+
+.btn-div .btn {
+    padding: 12px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #146FF8;
+    color: white;
+}
+
+/* BILL */
+
+.bill * {
+    font-size: 20px;
+}
+
+.bill {
+    padding-right: 29px;
+}
+
+table {
+    /* background-color: rgb(255, 153, 28); */
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table th, td{
+    padding: 10px;
+}
+
+thead{
+    background-color: orange;
+}
+
+tbody tr{
+    border-bottom: 2px solid white;
+}
+
+tbody td{
+    color: white;
+}
+
+tbody .action-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bill .amount{
+    /* background-color: blue; */
+    margin-top: 28px;
+    text-align: right;
+}
+
+.cost{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: right;
+}
+
+.cost ul{
+    /*  */
+    margin-left: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cost ul li{
+    list-style: none;
+    padding: 3px 0;
+    color: white;
+}
+
+.total {
+    /* border: 1px solid black; */
+    margin: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 204px;
+    margin-left: auto;
+    padding: 10px;
+    background-color: orange;
+}
+
+.bill .bold{
+    font-weight: 700;
+}
+
+
+
+/* MENU */
+
+
+
+.menu{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.menu.active{
+    display: flex;
+}
+
+.menu .wrapper {
+    display: flex;
+    width: 28%;
+    background-color: white;
+    position: fixed;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu li{
+    list-style: none;
+    padding: 4px 0;
+}
+
+.menu .close-btn {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    z-index: 1;
+    position: fixed;
+    top: 15vh;
+    right: 36.5vw;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu .close-btn:hover{
+    color: rgb(243, 22, 22);
+    /* text-decoration: underline; */
+}
+
+.info-div{
+    display: none;
+}
+
+.greeting{
+    display: none;
+}
+
+/* Print Media */
+
+@media print{
+
+    .billing,
+    header h3,
+    .print-btn,
+    .action-row {
+        display: none;
+    }
+    
+    .bill{
+        width: 100%;
+        padding-right: 0;
+        
+    }
+    section{
+        display: block;
+    }
+    
+    section{
+        padding: 0 40px;
+    }
+    
+    .greeting{
+        color: rgb(20, 111, 248);
+        text-align: center;
+        font-size: 35px;
+        display: block;
+    }
+    
+    .bill .amount{
+        margin-top: 0;
+    }
+    
+    .details{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 28px;
+    }
+    
+    .info-div{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        font-size: 25px;
+        
+    }
+    
+    .info-div p{
+        margin-bottom: 22px;
+    }
+    
+    .info-div span{
+        color: orange;
+    }
+}
