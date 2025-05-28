@@ -25,4 +25,12 @@ We also addressed the issue of *ghost reservations* by implementing a **time-bas
 - **Other**: body-parser, bcrypt 
 
 ---
+🙋‍♂️ Author
+Developed by Bhumi Arya
+🔗 https://github.com/bhumiar
 
+📄 License
+This project is licensed under the MIT License. Feel free to use and modify.
+
+💬 Feedback
+If you have any feedback or suggestions, feel free to open an issue or drop a message.
